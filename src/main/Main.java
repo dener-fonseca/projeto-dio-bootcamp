@@ -24,11 +24,12 @@ public class Main {
         prof1.setMentoria(mentoria1);
 
         // Criar Bootcamp
-        Bootcamp bootcamp = new Bootcamp();
-        bootcamp.setNome("Bootcamp Full Stack");
-        bootcamp.setDescricao("Formação completa em desenvolvimento web");
-        bootcamp.setDataInicial(LocalDate.now());
-        bootcamp.setDataFinal(LocalDate.now().plusDays(45));
+        Bootcamp bootcamp = new Bootcamp(
+            "Bootcamp Full Stack",
+            "Formação completa em desenvolvimento web",
+            LocalDate.now(),
+            LocalDate.now().plusDays(45)
+        );
         bootcamp.getCursos().add(cursoJava);
         bootcamp.getCursos().add(cursoJS);
         bootcamp.getProfessores().add(prof1);
