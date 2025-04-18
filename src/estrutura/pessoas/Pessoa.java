@@ -1,3 +1,6 @@
+
+package src.estrutura.pessoas;
+
 public abstract class Pessoa {
     // Atributos
     private String nome;

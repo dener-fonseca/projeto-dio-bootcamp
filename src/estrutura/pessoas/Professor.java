@@ -1,3 +1,4 @@
+
 package src.estrutura.pessoas;
 
 import src.estrutura.educacional.Curso;
@@ -8,6 +9,12 @@ public class Professor extends Pessoa {
     private String identificacao;
     private Curso cursoResponsavel;
     private Mentoria mentoria;
+
+    public Professor(String nome, String email, String github, String linkedin, String cpf, String identificacao) {
+        super(nome, email, github, linkedin);
+        this.cpf = cpf;
+        this.identificacao = identificacao;
+    }
 
     // Getters e Setters
     public String getCpf() {
