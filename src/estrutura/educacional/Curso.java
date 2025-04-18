@@ -7,13 +7,14 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Curso {
+    // Atributos do Curso
     private String titulo;
     private String descricao;
-    private int cargaHoraria; // em horas
+    private int cargaHoraria;
     private Professor professorResponsavel;
     private Set<Aluno> alunosInscritos = new HashSet<>();
 
-    // Construtor
+    // Construtor que recebe atributos especificos para o Curso
     public Curso(String titulo, String descricao, int cargaHoraria, Professor professorResponsavel) {
         this.titulo = titulo;
         this.descricao = descricao;
@@ -21,7 +22,7 @@ public class Curso {
         this.professorResponsavel = professorResponsavel;
     }
 
-    // Método para calcular XP (exemplo: 10 XP por hora)
+    // Método para calcular XP do curso
     public int getXp() {
         return cargaHoraria * 10;
     }

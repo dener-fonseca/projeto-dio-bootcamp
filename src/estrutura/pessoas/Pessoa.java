@@ -1,14 +1,13 @@
-
 package src.estrutura.pessoas;
 
 public abstract class Pessoa {
-    // Atributos
+    // Atributos da superclasse Pessoa
     private String nome;
     private String email;
     private String github;
     private String linkedin;
 
-    // Construtor
+    // Construtor que recebe atributos específicos para a superclasse Pessoa
     public Pessoa(String nome, String email, String github, String linkedin) {
         this.nome = nome;
         this.email = email;

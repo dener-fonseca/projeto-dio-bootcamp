@@ -8,6 +8,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Bootcamp {
+    // Atributos do Bootcamp
     private String nome;
     private String descricao;
     private LocalDate dataInicial;
@@ -16,7 +17,7 @@ public class Bootcamp {
     private Set<Professor> professores = new HashSet<>();
     private Set<Curso> cursos = new HashSet<>();
 
-    // Construtor
+    // Construtor que recebe atributos especificos para o Bootcamp
     public Bootcamp(String nome, String descricao, LocalDate dataInicial, LocalDate dataFinal) {
         this.nome = nome;
         this.descricao = descricao;

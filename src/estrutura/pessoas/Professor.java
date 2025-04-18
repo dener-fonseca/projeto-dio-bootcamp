@@ -1,15 +1,16 @@
-
 package src.estrutura.pessoas;
 
 import src.estrutura.educacional.Curso;
 import src.estrutura.educacional.Mentoria;
 
 public class Professor extends Pessoa {
+    // Atributos especificos de Professor
     private String cpf;
     private String identificacao;
     private Curso cursoResponsavel;
     private Mentoria mentoria;
 
+    // Construtor com os atributos herdados de Pessoa e os atributos especificos de Professor
     public Professor(String nome, String email, String github, String linkedin, String cpf, String identificacao) {
         super(nome, email, github, linkedin);
         this.cpf = cpf;

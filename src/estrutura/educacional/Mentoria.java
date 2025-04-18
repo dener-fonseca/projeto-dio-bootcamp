@@ -5,11 +5,12 @@ import src.estrutura.pessoas.Professor;
 import java.time.LocalDate;
 
 public class Mentoria {
+    // Atributos para a Mentoria
     private String titulo;
     private LocalDate data;
     private Professor mentor;
 
-    // Construtor
+    // Construtor que recebe atributos especificos para a Mentoria
     public Mentoria(String titulo, LocalDate data, Professor mentor) {
         this.titulo = titulo;
         this.data = data;
