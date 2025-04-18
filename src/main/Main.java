@@ -1,4 +1,4 @@
-package src;
+package src.main;
 
 import src.estrutura.pessoas.Aluno;
 import src.estrutura.pessoas.Professor;
